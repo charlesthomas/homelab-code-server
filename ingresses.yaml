@@ -1,0 +1,28 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: code-server
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: code.crt.house
+    external-dns.alpha.kubernetes.io/target: crt.house
+    nginx.org/websocket-services: code-server
+    
+    
+spec:
+  ingressClassName: nginx-crt-house
+  rules:
+    - host: "code.crt.house"
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: code-server
+                port:
+                  number: 8080
+  tls:
+    - hosts:
+      - code.crt.house
+      secretName: crt.house
