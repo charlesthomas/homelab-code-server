@@ -29,11 +29,11 @@ service: true
 serviceAccount: true
 svcAccountName: code-server
 svcName: code-server
-svcPortName: '8080'
+svcPortName: http
 svcPortNum: 8080
 svcProtocol: TCP
 svcSelector: 'app: code-server'
-svcTargetPort: '8080'
+svcTargetPort: http
 svcType: ClusterIP
 upstreamURL: https://coder.com/docs/code-server/latest
 url: https://github.com/charlesthomas/homelab-code-server

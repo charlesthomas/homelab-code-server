@@ -25,4 +25,3 @@ spec:
   tls:
     - hosts:
       - code.crt.house
-      secretName: crt.house
