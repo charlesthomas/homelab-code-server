@@ -1,0 +1,39 @@
+_commit: v1.1.2-7-g070905a
+_src_path: /Users/crthomas/code/charlesthomas/homelab-template
+additionalResources: ''
+backups: false
+helm: false
+ingClass: nginx-crt-house
+ingExtraAnnotations: ''
+ingHost: code.crt.house
+ingName: code-server
+ingPathType: Prefix
+ingWebSockets: true
+ingress: true
+labels: 'app: code-server'
+name: code-server
+namespace: code-server
+pvc: true
+pvcAccessMode: ReadWriteOnce
+pvcName: code-server
+pvcSize: 1Gi
+pvcStorageClass: nfs-k3s
+resources:
+- deployments.yaml
+- external-secrets.yaml
+- ingresses.yaml
+- pvcs.yaml
+- service-accounts.yaml
+- services.yaml
+service: true
+serviceAccount: true
+svcAccountName: code-server
+svcName: code-server
+svcPortName: '8080'
+svcPortNum: 8080
+svcProtocol: TCP
+svcSelector: 'app: code-server'
+svcTargetPort: '8080'
+svcType: ClusterIP
+upstreamURL: https://coder.com/docs/code-server/latest
+url: https://github.com/charlesthomas/homelab-code-server
