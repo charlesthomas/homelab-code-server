@@ -35,6 +35,10 @@ spec:
           env:
           - name: DOCKER_USER
             value: crthomas
+          - name: HOME
+            value: /home/crthomas
+          - name: TZ
+            value: America/Detroit
           - name: PASSWORD
             valueFrom:
               secretKeyRef:
@@ -43,6 +47,7 @@ spec:
           volumeMounts:
           - name: data
             mountPath: /home/crthomas
+          workingDir: /home/crthomas
           ports:
             - name: http
               containerPort: 8080
