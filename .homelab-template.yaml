@@ -1,13 +1,19 @@
-_commit: v1.1.2-7-g070905a
-_src_path: /Users/crthomas/code/charlesthomas/homelab-template
+_commit: v1.3.5
+_src_path: ./homelab-template
 additionalResources: ''
 backups: false
 helm: false
+homepageDescription: VS Code Editor
+homepageEnabled: true
+homepageGroup: Tools
+homepageIcon: code-server
+homepageName: Code-Server
 ingClass: nginx-crt-house
 ingExtraAnnotations: ''
 ingHost: code.crt.house
 ingName: code-server
 ingPathType: Prefix
+ingSecret: ''
 ingWebSockets: true
 ingress: true
 labels: 'app: code-server'
@@ -18,6 +24,7 @@ pvcAccessMode: ReadWriteOnce
 pvcName: code-server
 pvcSize: 1Gi
 pvcStorageClass: nfs-k3s
+reloader: true
 resources:
 - deployments.yaml
 - external-secrets.yaml
