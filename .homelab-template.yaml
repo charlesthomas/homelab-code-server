@@ -9,6 +9,7 @@ homepageGroup: Tools
 homepageIcon: code-server
 homepageName: Code-Server
 ingClass: nginx-crt-house
+ingCname: ''
 ingExtraAnnotations: ''
 ingHost: code.crt.house
 ingName: code-server
