@@ -14,7 +14,7 @@ metadata:
     gethomepage.dev/name: Code-Server
     gethomepage.dev/pod-selector: ""
 spec:
-  ingressClassName: nginx-crt-house
+  ingressClassName: nginx-internal
   rules:
     - host: "code.crt.house"
       http:

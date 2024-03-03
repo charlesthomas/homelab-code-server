@@ -8,7 +8,7 @@ homepageEnabled: true
 homepageGroup: Tools
 homepageIcon: code-server
 homepageName: Code-Server
-ingClass: nginx-crt-house
+ingClass: nginx-internal
 ingCname: ''
 ingExtraAnnotations: ''
 ingHost: code.crt.house
