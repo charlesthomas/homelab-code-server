@@ -4,6 +4,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: code-server
   namespace: code-server
+  labels:
+    
+    
 spec:
   accessModes:
   - ReadWriteOnce
