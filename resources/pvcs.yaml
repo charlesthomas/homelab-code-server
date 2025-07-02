@@ -10,5 +10,5 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  storageClassName: nfs-k3s
+  storageClassName: longhorn
   volumeMode: Filesystem
