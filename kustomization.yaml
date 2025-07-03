@@ -16,6 +16,12 @@ resources:
 - resources/pvcs.yaml
 - resources/service-accounts.yaml
 - resources/services.yaml
+
+images:
+  - name: code-server
+    newName: ghcr.io/charlesthomas/dev-box
+    newTag: v0.5.0-4.101.2
+
 patches:
 - patch: |-
     apiVersion: apps/v1

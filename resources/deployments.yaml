@@ -28,7 +28,7 @@ spec:
         fsGroup: 3000
       containers:
         - name: code-server
-          image: "ghcr.io/charlesthomas/dev-box:v0.4.0-4.21.1"
+          image: code-server
           imagePullPolicy: Always
           securityContext:
             runAsUser: 1000
