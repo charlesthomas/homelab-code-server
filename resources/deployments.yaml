@@ -31,6 +31,12 @@ spec:
           imagePullPolicy: Always
           securityContext:
             runAsUser: 1000
+          command: ["dumb-init"]
+          args:
+            - /usr/bin/code-server
+            - --bind-addr
+            - 0.0.0.0:8080
+            - .
           env:
           - name: DOCKER_USER
             value: crthomas
