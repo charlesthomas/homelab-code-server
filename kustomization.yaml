@@ -5,8 +5,10 @@ namespace: code-server
 
 commonAnnotations:
   repo: https://github.com/charlesthomas/homelab-code-server
-commonLabels:
-  app: code-server
+labels:
+- includeSelectors: true
+  pairs:
+    app: code-server
 
 resources:
 - resources/deployments.yaml
